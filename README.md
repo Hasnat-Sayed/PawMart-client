@@ -36,11 +36,74 @@ PawMart is a comprehensive pet adoption and supplies marketplace platform that c
 - **MongoDB** - NoSQL database
 - **Firebase** - Authentication and hosting
 
-## 👨‍💻 Developer
+## Dependencies
+ 
+**Client**
+ 
+| Package | Used for |
+|---|---|
+| react, react-router | UI and routing |
+| firebase | Authentication |
+| tailwindcss, daisyui | Styling |
+| axios | API requests |
+| react-icons | Icons |
+| react-toastify | Toast notifications |
+ 
+**Server**
+ 
+| Package | Used for |
+|---|---|
+| express | Web server and REST API |
+| mongodb | Database driver |
+| cors | Cross-origin requests |
+| dotenv | Environment variables |
+ 
+## Run Locally
+ 
+**Prerequisites:** Node.js, a MongoDB Atlas cluster, and a Firebase project with authentication enabled.
+ 
+### 1. Server
+ 
+```bash
+git clone https://github.com/Hasnat-Sayed/PawMart-server.git
+cd PawMart-server
+npm install
+```
+ 
+Create a `.env` file in the project root:
+ 
+```env
+DB_USERNAME=your_mongodb_username
+DB_PASSWORD=your_mongodb_password
+```
+ 
+Replace the cluster address in the MongoDB connection string with your own, then start the server (runs on port 3000):
+ 
+```bash
+node index.js
+```
+ 
+### 2. Client
+ 
+```bash
+git clone https://github.com/Hasnat-Sayed/PawMart-client.git
+cd PawMart-client
+npm install
+```
+ 
+Create a `.env.local` file with your Firebase config (use the variable names from the project's Firebase config file), and make sure the client's API requests point to your local server at `http://localhost:3000`.
+ 
+```bash
+npm run dev
+```
+ 
+## Links
+ 
+- **Live site:** [pawmart-2099.netlify.app](https://pawmart-2099.netlify.app/)
+- **Client repository:** `https://github.com/Hasnat-Sayed/PawMart-client`
+- **Server repository:** `https://github.com/Hasnat-Sayed/PawMart-server`
+- **Author:** Hasnat Bin Sayed — [GitHub](https://github.com/Hasnat-Sayed) · [LinkedIn](https://linkedin.com/in/hasnat-bin-sayed)
 
-**Your Name**
-- GitHub: [Hasnat-Sayed](https://github.com/Hasnat-Sayed)
-- Email: hasnatbin1@gmail.com
 
 ---
 
